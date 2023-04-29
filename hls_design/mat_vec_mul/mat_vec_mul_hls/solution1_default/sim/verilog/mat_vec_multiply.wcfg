@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="mat_vec_multiply.wdb" id="1">
+         <top_modules>
+            <top_module name="apatb_mat_vec_multiply_top" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="164905fs"></ZoomStartTime>
+      <ZoomEndTime time="1139906fs"></ZoomEndTime>
+      <Cursor1Time time="302500fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="340"></NameColumnWidth>
+      <ValueColumnWidth column_width="165"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="1" />
+   <wvobject fp_name="group1" type="group">
+      <obj_property name="label">Design Top Signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="group2" type="group">
+         <obj_property name="label">C InOuts</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="group3" type="group">
+            <obj_property name="label">accumulator(memory)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="isExpanded"></obj_property>
+            <wvobject fp_name="/apatb_mat_vec_multiply_top/AESL_inst_mat_vec_multiply/accumulator_q0" type="array">
+               <obj_property name="ElementShortName">accumulator_q0[31:0]</obj_property>
+               <obj_property name="ObjectShortName">accumulator_q0[31:0]</obj_property>
+               <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+               <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_mat_vec_multiply_top/AESL_inst_mat_vec_multiply/accumulator_d0" type="array">
+               <obj_property name="ElementShortName">accumulator_d0[31:0]</obj_property>
+               <obj_property name="ObjectShortName">accumulator_d0[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+               <obj_property name="CustomSignalColor">#00FF7F</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_mat_vec_multiply_top/AESL_inst_mat_vec_multiply/accumulator_we0" type="logic">
+               <obj_property name="ElementShortName">accumulator_we0</obj_property>
+               <obj_property name="ObjectShortName">accumulator_we0</obj_property>
+               <obj_property name="CustomSignalColor">#00FF7F</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_mat_vec_multiply_top/AESL_inst_mat_vec_multiply/accumulator_ce0" type="logic">
+               <obj_property name="ElementShortName">accumulator_ce0</obj_property>
+               <obj_property name="ObjectShortName">accumulator_ce0</obj_property>
+               <obj_property name="CustomSignalColor">#00FF7F</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_mat_vec_multiply_top/AESL_inst_mat_vec_multiply/accumulator_address0" type="array">
+               <obj_property name="ElementShortName">accumulator_address0[1:0]</obj_property>
+               <obj_property name="ObjectShortName">accumulator_address0[1:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+               <obj_property name="CustomSignalColor">#00FF7F</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group9" type="group">
+         <obj_property name="label">C Inputs</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="group10" type="group">
+            <obj_property name="label">vec_in(memory)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="isExpanded"></obj_property>
+            <wvobject fp_name="/apatb_mat_vec_multiply_top/AESL_inst_mat_vec_multiply/vec_in_q0" type="array">
+               <obj_property name="ElementShortName">vec_in_q0[31:0]</obj_property>
+               <obj_property name="ObjectShortName">vec_in_q0[31:0]</obj_property>
+               <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+               <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_mat_vec_multiply_top/AESL_inst_mat_vec_multiply/vec_in_ce0" type="logic">
+               <obj_property name="ElementShortName">vec_in_ce0</obj_property>
+               <obj_property name="ObjectShortName">vec_in_ce0</obj_property>
+               <obj_property name="CustomSignalColor">#00FF7F</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_mat_vec_multiply_top/AESL_inst_mat_vec_multiply/vec_in_address0" type="array">
+               <obj_property name="ElementShortName">vec_in_address0[1:0]</obj_property>
+               <obj_property name="ObjectShortName">vec_in_address0[1:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+               <obj_property name="CustomSignalColor">#00FF7F</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="group14" type="group">
+            <obj_property name="label">mat_in(memory)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="isExpanded"></obj_property>
+            <wvobject fp_name="/apatb_mat_vec_multiply_top/AESL_inst_mat_vec_multiply/mat_in_q0" type="array">
+               <obj_property name="ElementShortName">mat_in_q0[31:0]</obj_property>
+               <obj_property name="ObjectShortName">mat_in_q0[31:0]</obj_property>
+               <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+               <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_mat_vec_multiply_top/AESL_inst_mat_vec_multiply/mat_in_ce0" type="logic">
+               <obj_property name="ElementShortName">mat_in_ce0</obj_property>
+               <obj_property name="ObjectShortName">mat_in_ce0</obj_property>
+               <obj_property name="CustomSignalColor">#00FF7F</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_mat_vec_multiply_top/AESL_inst_mat_vec_multiply/mat_in_address0" type="array">
+               <obj_property name="ElementShortName">mat_in_address0[3:0]</obj_property>
+               <obj_property name="ObjectShortName">mat_in_address0[3:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+               <obj_property name="CustomSignalColor">#00FF7F</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group18" type="group">
+         <obj_property name="label">Block-level IO Handshake</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/apatb_mat_vec_multiply_top/AESL_inst_mat_vec_multiply/ap_start" type="logic">
+            <obj_property name="ElementShortName">ap_start</obj_property>
+            <obj_property name="ObjectShortName">ap_start</obj_property>
+         </wvobject>
+         <wvobject fp_name="/apatb_mat_vec_multiply_top/AESL_inst_mat_vec_multiply/ap_done" type="logic">
+            <obj_property name="ElementShortName">ap_done</obj_property>
+            <obj_property name="ObjectShortName">ap_done</obj_property>
+         </wvobject>
+         <wvobject fp_name="/apatb_mat_vec_multiply_top/AESL_inst_mat_vec_multiply/ap_idle" type="logic">
+            <obj_property name="ElementShortName">ap_idle</obj_property>
+            <obj_property name="ObjectShortName">ap_idle</obj_property>
+         </wvobject>
+         <wvobject fp_name="/apatb_mat_vec_multiply_top/AESL_inst_mat_vec_multiply/ap_ready" type="logic">
+            <obj_property name="ElementShortName">ap_ready</obj_property>
+            <obj_property name="ObjectShortName">ap_ready</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group23" type="group">
+         <obj_property name="label">Reset</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/apatb_mat_vec_multiply_top/AESL_inst_mat_vec_multiply/ap_rst" type="logic">
+            <obj_property name="ElementShortName">ap_rst</obj_property>
+            <obj_property name="ObjectShortName">ap_rst</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group25" type="group">
+         <obj_property name="label">Clock</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/apatb_mat_vec_multiply_top/AESL_inst_mat_vec_multiply/ap_clk" type="logic">
+            <obj_property name="ElementShortName">ap_clk</obj_property>
+            <obj_property name="ObjectShortName">ap_clk</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>

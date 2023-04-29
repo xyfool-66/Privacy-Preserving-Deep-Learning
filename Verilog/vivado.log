@@ -1,0 +1,309 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sun Mar 26 16:28:20 2023
+# Process ID: 6360
+# Current directory: D:/Desktop/PrivacyPreservingDeepLearning/CNN
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22032 D:\Desktop\PrivacyPreservingDeepLearning\CNN\CNN.xpr
+# Log file: D:/Desktop/PrivacyPreservingDeepLearning/CNN/vivado.log
+# Journal file: D:/Desktop/PrivacyPreservingDeepLearning/CNN\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Desktop/PrivacyPreservingDeepLearning/CNN/CNN.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Vivado2020/Vivado/2020.1/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Desktop/PrivacyPreservingDeepLearning/CNN/CNN.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'RelU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Desktop/PrivacyPreservingDeepLearning/CNN/CNN.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj RelU_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Desktop/PrivacyPreservingDeepLearning/CNN/CNN.srcs/sim_1/new/ReLU_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RelU_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Desktop/PrivacyPreservingDeepLearning/CNN/CNN.sim/sim_1/behav/xsim'
+"xelab -wto 7e534b548f1249749f9160b30394640d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot RelU_tb_behav xil_defaultlib.RelU_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado2020/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 7e534b548f1249749f9160b30394640d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot RelU_tb_behav xil_defaultlib.RelU_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ReLU
+Compiling module xil_defaultlib.RelU_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot RelU_tb_behav
+
+****** Webtalk v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source D:/Desktop/PrivacyPreservingDeepLearning/CNN/CNN.sim/sim_1/behav/xsim/xsim.dir/RelU_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'D:/Desktop/PrivacyPreservingDeepLearning/CNN/CNN.sim/sim_1/behav/xsim/xsim.dir/RelU_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Sun Mar 26 16:29:00 2023. For additional details about this file, please refer to the WebTalk help file at E:/Vivado2020/Vivado/2020.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Sun Mar 26 16:29:00 2023...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1247.391 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Desktop/PrivacyPreservingDeepLearning/CNN/CNN.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "RelU_tb_behav -key {Behavioral:sim_1:Functional:RelU_tb} -tclbatch {RelU_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source RelU_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'RelU_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 1247.391 ; gain = 0.000
+run 10 us
+run 10 us
+save_wave_config {D:/Desktop/PrivacyPreservingDeepLearning/CNN/RelU_tb_behav.wcfg}
+add_files -fileset sim_1 -norecurse D:/Desktop/PrivacyPreservingDeepLearning/CNN/RelU_tb_behav.wcfg
+set_property xsim.view D:/Desktop/PrivacyPreservingDeepLearning/CNN/RelU_tb_behav.wcfg [get_filesets sim_1]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1247.391 ; gain = 0.000
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Desktop/PrivacyPreservingDeepLearning/CNN/CNN.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'RelU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Desktop/PrivacyPreservingDeepLearning/CNN/CNN.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj RelU_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Desktop/PrivacyPreservingDeepLearning/CNN/CNN.srcs/sources_1/new/ReLU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ReLU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Desktop/PrivacyPreservingDeepLearning/CNN/CNN.srcs/sim_1/new/ReLU_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RelU_tb
+ERROR: [VRFC 10-2989] 'i_clk' is not declared [D:/Desktop/PrivacyPreservingDeepLearning/CNN/CNN.srcs/sim_1/new/ReLU_tb.v:48]
+ERROR: [VRFC 10-2865] module 'RelU_tb' ignored due to previous errors [D:/Desktop/PrivacyPreservingDeepLearning/CNN/CNN.srcs/sim_1/new/ReLU_tb.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/Desktop/PrivacyPreservingDeepLearning/CNN/CNN.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'D:/Desktop/PrivacyPreservingDeepLearning/CNN/CNN.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Desktop/PrivacyPreservingDeepLearning/CNN/CNN.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'RelU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Desktop/PrivacyPreservingDeepLearning/CNN/CNN.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj RelU_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Desktop/PrivacyPreservingDeepLearning/CNN/CNN.srcs/sources_1/new/ReLU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ReLU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Desktop/PrivacyPreservingDeepLearning/CNN/CNN.srcs/sim_1/new/ReLU_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RelU_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Desktop/PrivacyPreservingDeepLearning/CNN/CNN.sim/sim_1/behav/xsim'
+"xelab -wto 7e534b548f1249749f9160b30394640d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot RelU_tb_behav xil_defaultlib.RelU_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado2020/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 7e534b548f1249749f9160b30394640d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot RelU_tb_behav xil_defaultlib.RelU_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ReLU
+Compiling module xil_defaultlib.RelU_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot RelU_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Desktop/PrivacyPreservingDeepLearning/CNN/CNN.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "RelU_tb_behav -key {Behavioral:sim_1:Functional:RelU_tb} -tclbatch {RelU_tb.tcl} -view {D:/Desktop/PrivacyPreservingDeepLearning/CNN/RelU_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+open_wave_config D:/Desktop/PrivacyPreservingDeepLearning/CNN/RelU_tb_behav.wcfg
+WARNING: Simulation object /RelU_tb/i_clk was not found in the design.
+WARNING: Simulation object /RelU_tb/i_rst was not found in the design.
+WARNING: Simulation object /RelU_tb/i_ReLu_In was not found in the design.
+WARNING: Simulation object /RelU_tb/i_relu_valid was not found in the design.
+WARNING: Simulation object /RelU_tb/o_ReLu_valid was not found in the design.
+WARNING: Simulation object /RelU_tb/o_ReLu_out was not found in the design.
+source RelU_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'RelU_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Desktop/PrivacyPreservingDeepLearning/CNN/CNN.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'RelU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Desktop/PrivacyPreservingDeepLearning/CNN/CNN.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj RelU_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Desktop/PrivacyPreservingDeepLearning/CNN/CNN.srcs/sources_1/new/ReLU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ReLU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Desktop/PrivacyPreservingDeepLearning/CNN/CNN.srcs/sim_1/new/ReLU_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RelU_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Desktop/PrivacyPreservingDeepLearning/CNN/CNN.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Desktop/PrivacyPreservingDeepLearning/CNN/CNN.sim/sim_1/behav/xsim'
+"xelab -wto 7e534b548f1249749f9160b30394640d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot RelU_tb_behav xil_defaultlib.RelU_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado2020/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 7e534b548f1249749f9160b30394640d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot RelU_tb_behav xil_defaultlib.RelU_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ReLU
+Compiling module xil_defaultlib.RelU_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot RelU_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1265.090 ; gain = 0.000
+save_wave_config {D:/Desktop/PrivacyPreservingDeepLearning/CNN/RelU_tb_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Desktop/PrivacyPreservingDeepLearning/CNN/CNN.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'RelU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Desktop/PrivacyPreservingDeepLearning/CNN/CNN.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj RelU_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Desktop/PrivacyPreservingDeepLearning/CNN/CNN.srcs/sources_1/new/ReLU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ReLU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Desktop/PrivacyPreservingDeepLearning/CNN/CNN.srcs/sim_1/new/ReLU_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RelU_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Desktop/PrivacyPreservingDeepLearning/CNN/CNN.sim/sim_1/behav/xsim'
+"xelab -wto 7e534b548f1249749f9160b30394640d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot RelU_tb_behav xil_defaultlib.RelU_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado2020/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 7e534b548f1249749f9160b30394640d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot RelU_tb_behav xil_defaultlib.RelU_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ReLU
+Compiling module xil_defaultlib.RelU_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot RelU_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Desktop/PrivacyPreservingDeepLearning/CNN/CNN.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "RelU_tb_behav -key {Behavioral:sim_1:Functional:RelU_tb} -tclbatch {RelU_tb.tcl} -view {D:/Desktop/PrivacyPreservingDeepLearning/CNN/RelU_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+open_wave_config D:/Desktop/PrivacyPreservingDeepLearning/CNN/RelU_tb_behav.wcfg
+source RelU_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'RelU_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7vx485tffg1157-1
+Top: ReLU
+INFO: [Device 21-403] Loading part xc7vx485tffg1157-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1927.598 ; gain = 241.164
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'ReLU' [D:/Desktop/PrivacyPreservingDeepLearning/CNN/CNN.srcs/sources_1/new/ReLU.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ReLU' (1#1) [D:/Desktop/PrivacyPreservingDeepLearning/CNN/CNN.srcs/sources_1/new/ReLU.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 2002.383 ; gain = 315.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 2002.383 ; gain = 315.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 2002.383 ; gain = 315.949
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2002.383 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2065.312 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 2157.293 ; gain = 470.859
+6 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:18 . Memory (MB): peak = 2157.293 ; gain = 830.988
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 2159.109 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 28 21:40:12 2023...

@@ -1,0 +1,2 @@
+current_fileset
+open_wave_database mat_vec_multiply.wdb

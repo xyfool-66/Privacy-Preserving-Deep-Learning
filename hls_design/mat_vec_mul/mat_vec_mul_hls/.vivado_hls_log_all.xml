@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7_fpv7'." projectName="mat_vec_mul_hls" solutionName="solution1_default" date="2023-04-25T20:59:49.799+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'E:/Vivado2020/Vivado/2020.1/common/technology/xilinx/Virtex-7/Virtex-7_fpv7.lib'." projectName="mat_vec_mul_hls" solutionName="solution1_default" date="2023-04-25T20:59:48.942+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7'." projectName="mat_vec_mul_hls" solutionName="solution1_default" date="2023-04-25T20:59:48.934+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'E:/Vivado2020/Vivado/2020.1/common/technology/xilinx/Virtex-7/Virtex-7.lib'." projectName="mat_vec_mul_hls" solutionName="solution1_default" date="2023-04-25T20:59:48.907+0800" type="Warning"/>
+      </synLog>
+      <simLog>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7_fpv7'." projectName="mat_vec_mul_hls" solutionName="solution1_default" date="2023-04-25T21:01:56.149+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'E:/Vivado2020/Vivado/2020.1/common/technology/xilinx/Virtex-7/Virtex-7_fpv7.lib'." projectName="mat_vec_mul_hls" solutionName="solution1_default" date="2023-04-25T21:01:55.256+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7'." projectName="mat_vec_mul_hls" solutionName="solution1_default" date="2023-04-25T21:01:55.242+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'E:/Vivado2020/Vivado/2020.1/common/technology/xilinx/Virtex-7/Virtex-7.lib'." projectName="mat_vec_mul_hls" solutionName="solution1_default" date="2023-04-25T21:01:55.228+0800" type="Warning"/>
+      </simLog>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

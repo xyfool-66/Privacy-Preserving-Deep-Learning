@@ -1,0 +1,118 @@
+INFO: [COSIM-47] Using XSIM for RTL simulation.
+INFO: [COSIM-14] Instrumenting C test bench ...
+   Build using "E:/Vivado2020/Vivado/2020.1/tps/win64/msys64/mingw64/bin/g++"
+   Compiling apatb_mat_vec_multiply.cpp
+   Compiling mat_vec_mul_tb.cpp_pre.cpp.tb.cpp
+   Compiling mat_vec_mul.cpp_pre.cpp.tb.cpp
+   Generating cosim.tv.exe
+INFO: [COSIM-302] Starting C TB testing ... 
+INFO: [COSIM-333] Generating C post check test bench ...
+INFO: [COSIM-12] Generating RTL test bench ...
+INFO: [COSIM-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM-323] Starting verilog simulation. 
+INFO: [COSIM-15] Starting XSIM ...
+INFO: [COSIM-316] Starting C post checking ...
+Element 0 is right!Element 1 is right!Element 2 is right!Element 3 is right!
+
+D:\Desktop\PrivacyPreservingDeepLearning\hls_design\mat_vec_mul\mat_vec_mul_hls\solution1_default\sim\verilog>set PATH= 
+
+D:\Desktop\PrivacyPreservingDeepLearning\hls_design\mat_vec_mul\mat_vec_mul_hls\solution1_default\sim\verilog>call E:/Vivado2020/Vivado/2020.1/bin/xelab xil_defaultlib.apatb_mat_vec_multiply_top glbl -prj mat_vec_multiply.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile "E:/Vivado2020/Vivado/2020.1/data/xsim/ip/xsim_ip.ini" --lib "ieee_proposed=./ieee_proposed" -s mat_vec_multiply -debug wave 
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "E:/Vivado2020/Vivado/2020.1/data/xsim/ip/xsim_ip.ini".
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado2020/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_mat_vec_multiply_top glbl -prj mat_vec_multiply.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile E:/Vivado2020/Vivado/2020.1/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s mat_vec_multiply -debug wave 
+Multi-threading is on. Using 18 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Desktop/PrivacyPreservingDeepLearning/hls_design/mat_vec_mul/mat_vec_mul_hls/solution1_default/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Desktop/PrivacyPreservingDeepLearning/hls_design/mat_vec_mul/mat_vec_mul_hls/solution1_default/sim/verilog/AESL_automem_accumulator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_accumulator
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Desktop/PrivacyPreservingDeepLearning/hls_design/mat_vec_mul/mat_vec_mul_hls/solution1_default/sim/verilog/AESL_automem_mat_in.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_mat_in
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Desktop/PrivacyPreservingDeepLearning/hls_design/mat_vec_mul/mat_vec_mul_hls/solution1_default/sim/verilog/AESL_automem_vec_in.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_vec_in
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Desktop/PrivacyPreservingDeepLearning/hls_design/mat_vec_mul/mat_vec_mul_hls/solution1_default/sim/verilog/mat_vec_multiply.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_mat_vec_multiply_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Desktop/PrivacyPreservingDeepLearning/hls_design/mat_vec_mul/mat_vec_mul_hls/solution1_default/sim/verilog/mat_vec_multiply.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mat_vec_multiply
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Desktop/PrivacyPreservingDeepLearning/hls_design/mat_vec_mul/mat_vec_mul_hls/solution1_default/sim/verilog/mat_vec_multiply_bkb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mat_vec_multiply_bkb_ram
+INFO: [VRFC 10-311] analyzing module mat_vec_multiply_bkb
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mat_vec_multiply_bkb_ram
+Compiling module xil_defaultlib.mat_vec_multiply_bkb(DataWidth=3...
+Compiling module xil_defaultlib.mat_vec_multiply
+Compiling module xil_defaultlib.AESL_automem_mat_in
+Compiling module xil_defaultlib.AESL_automem_vec_in
+Compiling module xil_defaultlib.AESL_automem_accumulator
+Compiling module xil_defaultlib.apatb_mat_vec_multiply_top
+Compiling module work.glbl
+Built simulation snapshot mat_vec_multiply
+
+****** Webtalk v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source D:/Desktop/PrivacyPreservingDeepLearning/hls_design/mat_vec_mul/mat_vec_mul_hls/solution1_default/sim/verilog/xsim.dir/mat_vec_multiply/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'D:/Desktop/PrivacyPreservingDeepLearning/hls_design/mat_vec_mul/mat_vec_mul_hls/solution1_default/sim/verilog/xsim.dir/mat_vec_multiply/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Apr 25 21:02:11 2023. For additional details about this file, please refer to the WebTalk help file at E:/Vivado2020/Vivado/2020.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Tue Apr 25 21:02:11 2023...
+
+****** xsim v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/mat_vec_multiply/xsim_script.tcl
+# xsim {mat_vec_multiply} -autoloadwcfg -tclbatch {mat_vec_multiply.tcl}
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source mat_vec_multiply.tcl
+## log_wave [get_objects -filter {type == in_port || type == out_port || type == inout_port || type == port} /apatb_mat_vec_multiply_top/AESL_inst_mat_vec_multiply/*]
+## set designtopgroup [add_wave_group "Design Top Signals"]
+## set cinoutgroup [add_wave_group "C InOuts" -into $designtopgroup]
+## set accumulator_group [add_wave_group accumulator(memory) -into $cinoutgroup]
+## add_wave /apatb_mat_vec_multiply_top/AESL_inst_mat_vec_multiply/accumulator_q0 -into $accumulator_group -radix hex
+## add_wave /apatb_mat_vec_multiply_top/AESL_inst_mat_vec_multiply/accumulator_d0 -into $accumulator_group -radix hex
+## add_wave /apatb_mat_vec_multiply_top/AESL_inst_mat_vec_multiply/accumulator_we0 -into $accumulator_group -color #ffff00 -radix hex
+## add_wave /apatb_mat_vec_multiply_top/AESL_inst_mat_vec_multiply/accumulator_ce0 -into $accumulator_group -color #ffff00 -radix hex
+## add_wave /apatb_mat_vec_multiply_top/AESL_inst_mat_vec_multiply/accumulator_address0 -into $accumulator_group -radix hex
+## set cinputgroup [add_wave_group "C Inputs" -into $designtopgroup]
+## set vec_in_group [add_wave_group vec_in(memory) -into $cinputgroup]
+## add_wave /apatb_mat_vec_multiply_top/AESL_inst_mat_vec_multiply/vec_in_q0 -into $vec_in_group -radix hex
+## add_wave /apatb_mat_vec_multiply_top/AESL_inst_mat_vec_multiply/vec_in_ce0 -into $vec_in_group -color #ffff00 -radix hex
+## add_wave /apatb_mat_vec_multiply_top/AESL_inst_mat_vec_multiply/vec_in_address0 -into $vec_in_group -radix hex
+## set mat_in_group [add_wave_group mat_in(memory) -into $cinputgroup]
+## add_wave /apatb_mat_vec_multiply_top/AESL_inst_mat_vec_multiply/mat_in_q0 -into $mat_in_group -radix hex
+## add_wave /apatb_mat_vec_multiply_top/AESL_inst_mat_vec_multiply/mat_in_ce0 -into $mat_in_group -color #ffff00 -radix hex
+## add_wave /apatb_mat_vec_multiply_top/AESL_inst_mat_vec_multiply/mat_in_address0 -into $mat_in_group -radix hex
+## set blocksiggroup [add_wave_group "Block-level IO Handshake" -into $designtopgroup]
+## add_wave /apatb_mat_vec_multiply_top/AESL_inst_mat_vec_multiply/ap_start -into $blocksiggroup
+## add_wave /apatb_mat_vec_multiply_top/AESL_inst_mat_vec_multiply/ap_done -into $blocksiggroup
+## add_wave /apatb_mat_vec_multiply_top/AESL_inst_mat_vec_multiply/ap_idle -into $blocksiggroup
+## add_wave /apatb_mat_vec_multiply_top/AESL_inst_mat_vec_multiply/ap_ready -into $blocksiggroup
+## set resetgroup [add_wave_group "Reset" -into $designtopgroup]
+## add_wave /apatb_mat_vec_multiply_top/AESL_inst_mat_vec_multiply/ap_rst -into $resetgroup
+## set clockgroup [add_wave_group "Clock" -into $designtopgroup]
+## add_wave /apatb_mat_vec_multiply_top/AESL_inst_mat_vec_multiply/ap_clk -into $clockgroup
+## save_wave_config mat_vec_multiply.wcfg
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [0.00%] @ "125000"
+// RTL Simulation : 1 / 1 [100.00%] @ "1125000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 1165 ns : File "D:/Desktop/PrivacyPreservingDeepLearning/hls_design/mat_vec_mul/mat_vec_mul_hls/solution1_default/sim/verilog/mat_vec_multiply.autotb.v" Line 319
+## quit
+INFO: [Common 17-206] Exiting xsim at Tue Apr 25 21:02:20 2023...
+Element 0 is right!Element 1 is right!Element 2 is right!Element 3 is right!
+INFO: [COSIM-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="mat_vec_mul.cpp" path="D:\Desktop\PrivacyPreservingDeepLearning\hls_design\mat_vec_mul\mat_vec_mul.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="mat_vec_mul_tb.cpp" path="D:\Desktop\PrivacyPreservingDeepLearning\hls_design\mat_vec_mul\mat_vec_mul_tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

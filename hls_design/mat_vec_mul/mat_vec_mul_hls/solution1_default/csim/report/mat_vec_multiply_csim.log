@@ -1,0 +1,8 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../mat_vec_mul_tb.cpp in debug mode
+   Compiling ../../../../mat_vec_mul.cpp in debug mode
+   Generating csim.exe
+Element 0 is right!Element 1 is right!Element 2 is right!Element 3 is right!
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

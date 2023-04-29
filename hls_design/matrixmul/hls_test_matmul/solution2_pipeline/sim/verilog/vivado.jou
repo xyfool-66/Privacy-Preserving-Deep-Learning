@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Tue Apr 25 14:58:46 2023
+# Process ID: 24000
+# Current directory: D:/Desktop/PrivacyPreservingDeepLearning/hls_design/hls_test_matmul/solution2_pipeline/sim/verilog
+# Command line: vivado.exe -source open_wave.tcl
+# Log file: D:/Desktop/PrivacyPreservingDeepLearning/hls_design/hls_test_matmul/solution2_pipeline/sim/verilog/vivado.log
+# Journal file: D:/Desktop/PrivacyPreservingDeepLearning/hls_design/hls_test_matmul/solution2_pipeline/sim/verilog\vivado.jou
+#-----------------------------------------------------------
+start_gui
+source open_wave.tcl
+open_wave_config D:/Desktop/PrivacyPreservingDeepLearning/hls_design/hls_test_matmul/solution2_pipeline/sim/verilog/matrixmul.wcfg
+save_wave_config {D:/Desktop/PrivacyPreservingDeepLearning/hls_design/hls_test_matmul/solution2_pipeline/sim/verilog/matrixmul.wcfg}
+close_sim

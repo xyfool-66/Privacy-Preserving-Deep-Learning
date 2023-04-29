@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [XFORM 203-124] Array  'b': may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order." projectName="hls_test_matmul" solutionName="solution2_pipeline" date="2023-04-25T14:56:35.906+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-124] Array  'a': may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order." projectName="hls_test_matmul" solutionName="solution2_pipeline" date="2023-04-25T14:56:35.874+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'Product' (matrixmul.cpp:79) because its parent loop or function is pipelined." projectName="hls_test_matmul" solutionName="solution2_pipeline" date="2023-04-25T14:56:35.727+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'Cache_Col' (matrixmul.cpp:77) because its parent loop or function is pipelined." projectName="hls_test_matmul" solutionName="solution2_pipeline" date="2023-04-25T14:56:35.718+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'Cache_Row' (matrixmul.cpp:72) because its parent loop or function is pipelined." projectName="hls_test_matmul" solutionName="solution2_pipeline" date="2023-04-25T14:56:35.705+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-124] Array  'b': may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order." projectName="hls_test_matmul" solutionName="solution1" date="2023-04-25T14:43:32.837+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-124] Array  'a': may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order." projectName="hls_test_matmul" solutionName="solution1" date="2023-04-25T14:43:32.792+0800" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

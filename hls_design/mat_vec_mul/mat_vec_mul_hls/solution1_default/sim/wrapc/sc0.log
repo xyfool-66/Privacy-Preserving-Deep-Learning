@@ -1,0 +1,5 @@
+   Build using "E:/Vivado2020/Vivado/2020.1/tps/win64/msys64/mingw64/bin/g++"
+   Compiling apatb_mat_vec_multiply.cpp
+   Compiling mat_vec_mul_tb.cpp_pre.cpp.tb.cpp
+   Compiling mat_vec_mul.cpp_pre.cpp.tb.cpp
+   Generating cosim.tv.exe

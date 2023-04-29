@@ -1,0 +1,14 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="matrixmul" label="Cache_Row" functionLabel="">
+            <pragma name="PIPELINE"/>
+        </directive>
+        <directive functionName="matrixmul" label="Cache_Col" functionLabel="">
+            <pragma name="PIPELINE"/>
+        </directive>
+        <directive functionName="matrixmul" label="Product" functionLabel="">
+            <pragma name="PIPELINE"/>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+
