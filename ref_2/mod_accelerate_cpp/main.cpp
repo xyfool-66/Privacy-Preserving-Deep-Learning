@@ -11,17 +11,17 @@ NUM mod(NUM a, NUM p) {
 }
 
 NUM mod_opt(NUM a, NUM p, NUM m, NUM k) {
-	NUM q = a * m >> k;
+	NUM q = a * m >> k; 
 	NUM r = a - p * q;
 	return r;
 }
 
 int main() {
 
-	NUM a = 64829742;
+	NUM a = 666;
 	// 65536 = 2^16
-	NUM p = 65535;
-	NUM k = 32;
+	NUM p = 15;
+	NUM k = 8;
 	NUM kk = static_cast<NUM>(1) << k;
 	NUM m = floor(kk / double(p));
 
@@ -48,5 +48,6 @@ int main() {
 	double TotalTime2 = (double)(end2 - start2) / CLOCKS_PER_SEC;
 	cout << "Many times optimized mod needs " << TotalTime2*1000 << " ms" << endl;
 
+	cout << "Results = " << r << endl;
 	return 0;
 }

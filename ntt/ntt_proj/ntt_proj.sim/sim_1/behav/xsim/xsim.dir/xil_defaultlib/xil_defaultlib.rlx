@@ -1,0 +1,9 @@
+0.7
+2020.1
+May 27 2020
+20:09:33
+D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim/glbl.v,1590624368,verilog,,,,glbl,,,,,,,,
+D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sim_1/new/NTT_8p_radix2_tp.v,1683557089,verilog,,,,NTT_8p_radix2_tp,,,,,,,,
+D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sim_1/new/PE_tb.v,1683545439,verilog,,,,PE_tb,,,,,,,,
+D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sources_1/new/NTT_8p_radix2.v,1683561263,verilog,,D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sources_1/new/PE.v,,NTT_8p_radix2,,,,,,,,
+D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sources_1/new/PE.v,1683557088,verilog,,D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sim_1/new/NTT_8p_radix2_tp.v,,PE,,,,,,,,

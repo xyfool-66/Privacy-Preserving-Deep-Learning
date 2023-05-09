@@ -1,0 +1,4 @@
+Running: xsim.dir/NTT_8p_radix2_tp_behav/xsimk.exe -simmode gui -wdb NTT_8p_radix2_tp_behav.wdb -simrunnum 0 -socket 63805
+Design successfully loaded
+Design Loading Memory Usage: 7704 KB (Peak: 7704 KB)
+Design Loading CPU Usage: 0 ms

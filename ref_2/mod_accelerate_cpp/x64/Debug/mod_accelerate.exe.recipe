@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>D:\Desktop\PrivacyPreservingDeepLearning\ref_cheetah\mod_accelerate\x64\Debug\mod_accelerate.exe</FullPath>
+      <FullPath>D:\Privacy-Preserving-Deep-Learning\ref_2\mod_accelerate_cpp\x64\Debug\mod_accelerate.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

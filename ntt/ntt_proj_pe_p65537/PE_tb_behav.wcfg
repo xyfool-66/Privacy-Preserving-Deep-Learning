@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="PE_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="PE_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="242001fs"></ZoomEndTime>
+      <Cursor1Time time="1000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="238"></NameColumnWidth>
+      <ValueColumnWidth column_width="114"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="15" />
+   <wvobject fp_name="/PE_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PE_tb/rstn" type="logic">
+      <obj_property name="ElementShortName">rstn</obj_property>
+      <obj_property name="ObjectShortName">rstn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PE_tb/en" type="logic">
+      <obj_property name="ElementShortName">en</obj_property>
+      <obj_property name="ObjectShortName">en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PE_tb/pe_inst/en_r" type="array">
+      <obj_property name="ElementShortName">en_r[4:0]</obj_property>
+      <obj_property name="ObjectShortName">en_r[4:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PE_tb/a" type="array">
+      <obj_property name="ElementShortName">a[16:0]</obj_property>
+      <obj_property name="ObjectShortName">a[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PE_tb/b" type="array">
+      <obj_property name="ElementShortName">b[16:0]</obj_property>
+      <obj_property name="ObjectShortName">b[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PE_tb/w" type="array">
+      <obj_property name="ElementShortName">w[16:0]</obj_property>
+      <obj_property name="ObjectShortName">w[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PE_tb/pe_inst/a_w_expand" type="array">
+      <obj_property name="ElementShortName">a_w_expand[33:0]</obj_property>
+      <obj_property name="ObjectShortName">a_w_expand[33:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PE_tb/pe_inst/a_w_expand_lb" type="array">
+      <obj_property name="ElementShortName">a_w_expand_lb[17:0]</obj_property>
+      <obj_property name="ObjectShortName">a_w_expand_lb[17:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PE_tb/pe_inst/a_w_expand_hb" type="array">
+      <obj_property name="ElementShortName">a_w_expand_hb[17:0]</obj_property>
+      <obj_property name="ObjectShortName">a_w_expand_hb[17:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PE_tb/pe_inst/a_w_mod" type="array">
+      <obj_property name="ElementShortName">a_w_mod[17:0]</obj_property>
+      <obj_property name="ObjectShortName">a_w_mod[17:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PE_tb/pe_inst/a_w" type="array">
+      <obj_property name="ElementShortName">a_w[16:0]</obj_property>
+      <obj_property name="ObjectShortName">a_w[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PE_tb/valid" type="logic">
+      <obj_property name="ElementShortName">valid</obj_property>
+      <obj_property name="ObjectShortName">valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PE_tb/A" type="array">
+      <obj_property name="ElementShortName">A[17:0]</obj_property>
+      <obj_property name="ObjectShortName">A[17:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PE_tb/B" type="array">
+      <obj_property name="ElementShortName">B[17:0]</obj_property>
+      <obj_property name="ObjectShortName">B[17:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

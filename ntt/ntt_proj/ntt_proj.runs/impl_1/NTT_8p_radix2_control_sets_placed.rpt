@@ -1,0 +1,94 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Mon May  8 23:42:24 2023
+| Host         : LAPTOP-V1B5SOSU running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file NTT_8p_radix2_control_sets_placed.rpt
+| Design       : NTT_8p_radix2
+| Device       : xc7vx485t
+------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    16 |
+|    Minimum number of control sets                        |    16 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    52 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    16 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    15 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               0 |            0 |
+| No           | No                    | Yes                    |              12 |            7 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |             216 |           53 |
+| Yes          | No                    | Yes                    |             456 |          132 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+-----------------------+------------------+------------------+----------------+--------------+
+|  Clock Signal  |     Enable Signal     | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+-----------------------+------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG |                       | pe20/rstn        |                7 |             12 |         1.71 |
+|  clk_IBUF_BUFG | pe20/en_r_reg[0]_0[0] |                  |                7 |             36 |         5.14 |
+|  clk_IBUF_BUFG | pe20/en_r_reg[1]_0[0] |                  |                6 |             36 |         6.00 |
+|  clk_IBUF_BUFG | pe12/en_r             | pe20/rstn        |                9 |             36 |         4.00 |
+|  clk_IBUF_BUFG | pe12/E[0]             | pe20/rstn        |               12 |             36 |         3.00 |
+|  clk_IBUF_BUFG | pe12/en_r_reg[1]_0[0] |                  |                9 |             36 |         4.00 |
+|  clk_IBUF_BUFG | pe12/en_r_reg[0]_0[0] |                  |               10 |             36 |         3.60 |
+|  clk_IBUF_BUFG | pe20/en_r             | pe20/rstn        |                9 |             36 |         4.00 |
+|  clk_IBUF_BUFG | pe20/E[0]             | pe20/rstn        |               12 |             36 |         3.00 |
+|  clk_IBUF_BUFG | pe03/en_r_reg[1]_1[0] |                  |               11 |             36 |         3.27 |
+|  clk_IBUF_BUFG | pe03/E[0]             |                  |               10 |             36 |         3.60 |
+|  clk_IBUF_BUFG | pe03/en_r_reg[0]_0[0] | pe20/rstn        |                6 |             36 |         6.00 |
+|  clk_IBUF_BUFG | pe03/en_r_reg[1]_0[0] | pe20/rstn        |               12 |             36 |         3.00 |
+|  clk_IBUF_BUFG | pe20/en_r_reg[2]_0[0] | pe20/rstn        |               24 |             80 |         3.33 |
+|  clk_IBUF_BUFG | pe12/en_r_reg[2]_0[0] | pe20/rstn        |               24 |             80 |         3.33 |
+|  clk_IBUF_BUFG | pe03/en_r_reg[2]_0[0] | pe20/rstn        |               24 |             80 |         3.33 |
++----------------+-----------------------+------------------+------------------+----------------+--------------+
+
+

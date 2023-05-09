@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="NTT_8p_radix2_tp_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="NTT_8p_radix2_tp" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="354801fs"></ZoomEndTime>
+      <Cursor1Time time="78008fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="232"></NameColumnWidth>
+      <ValueColumnWidth column_width="90"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="20" />
+   <wvobject fp_name="/NTT_8p_radix2_tp/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NTT_8p_radix2_tp/rstn" type="logic">
+      <obj_property name="ElementShortName">rstn</obj_property>
+      <obj_property name="ObjectShortName">rstn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NTT_8p_radix2_tp/en" type="logic">
+      <obj_property name="ElementShortName">en</obj_property>
+      <obj_property name="ObjectShortName">en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NTT_8p_radix2_tp/in0" type="array">
+      <obj_property name="ElementShortName">in0[8:0]</obj_property>
+      <obj_property name="ObjectShortName">in0[8:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NTT_8p_radix2_tp/in1" type="array">
+      <obj_property name="ElementShortName">in1[8:0]</obj_property>
+      <obj_property name="ObjectShortName">in1[8:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NTT_8p_radix2_tp/in2" type="array">
+      <obj_property name="ElementShortName">in2[8:0]</obj_property>
+      <obj_property name="ObjectShortName">in2[8:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NTT_8p_radix2_tp/in3" type="array">
+      <obj_property name="ElementShortName">in3[8:0]</obj_property>
+      <obj_property name="ObjectShortName">in3[8:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NTT_8p_radix2_tp/in4" type="array">
+      <obj_property name="ElementShortName">in4[8:0]</obj_property>
+      <obj_property name="ObjectShortName">in4[8:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NTT_8p_radix2_tp/in5" type="array">
+      <obj_property name="ElementShortName">in5[8:0]</obj_property>
+      <obj_property name="ObjectShortName">in5[8:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NTT_8p_radix2_tp/in6" type="array">
+      <obj_property name="ElementShortName">in6[8:0]</obj_property>
+      <obj_property name="ObjectShortName">in6[8:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NTT_8p_radix2_tp/in7" type="array">
+      <obj_property name="ElementShortName">in7[8:0]</obj_property>
+      <obj_property name="ObjectShortName">in7[8:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NTT_8p_radix2_tp/valid" type="logic">
+      <obj_property name="ElementShortName">valid</obj_property>
+      <obj_property name="ObjectShortName">valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NTT_8p_radix2_tp/out0" type="array">
+      <obj_property name="ElementShortName">out0[8:0]</obj_property>
+      <obj_property name="ObjectShortName">out0[8:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NTT_8p_radix2_tp/out1" type="array">
+      <obj_property name="ElementShortName">out1[8:0]</obj_property>
+      <obj_property name="ObjectShortName">out1[8:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NTT_8p_radix2_tp/out2" type="array">
+      <obj_property name="ElementShortName">out2[8:0]</obj_property>
+      <obj_property name="ObjectShortName">out2[8:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NTT_8p_radix2_tp/out3" type="array">
+      <obj_property name="ElementShortName">out3[8:0]</obj_property>
+      <obj_property name="ObjectShortName">out3[8:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NTT_8p_radix2_tp/out4" type="array">
+      <obj_property name="ElementShortName">out4[8:0]</obj_property>
+      <obj_property name="ObjectShortName">out4[8:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NTT_8p_radix2_tp/out5" type="array">
+      <obj_property name="ElementShortName">out5[8:0]</obj_property>
+      <obj_property name="ObjectShortName">out5[8:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NTT_8p_radix2_tp/out6" type="array">
+      <obj_property name="ElementShortName">out6[8:0]</obj_property>
+      <obj_property name="ObjectShortName">out6[8:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NTT_8p_radix2_tp/out7" type="array">
+      <obj_property name="ElementShortName">out7[8:0]</obj_property>
+      <obj_property name="ObjectShortName">out7[8:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

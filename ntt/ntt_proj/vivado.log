@@ -1,0 +1,964 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Mon May  8 19:12:45 2023
+# Process ID: 22680
+# Current directory: D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18436 D:\Privacy-Preserving-Deep-Learning\ntt\ntt_proj\ntt_proj.xpr
+# Log file: D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/vivado.log
+# Journal file: D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Vivado2020/Vivado/2020.1/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'PE_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj PE_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sources_1/new/PE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sim_1/new/PE_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PE_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+"xelab -wto fc2e40796adb475ab8f729b3f29d8f76 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot PE_tb_behav xil_defaultlib.PE_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado2020/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto fc2e40796adb475ab8f729b3f29d8f76 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot PE_tb_behav xil_defaultlib.PE_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PE
+Compiling module xil_defaultlib.PE_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot PE_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "PE_tb_behav -key {Behavioral:sim_1:Functional:PE_tb} -tclbatch {PE_tb.tcl} -view {D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/PE_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+open_wave_config D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/PE_tb_behav.wcfg
+source PE_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 1 us : File "D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sim_1/new/PE_tb.v" Line 70
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'PE_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1113.723 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'PE_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj PE_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sources_1/new/PE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sim_1/new/PE_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PE_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+"xelab -wto fc2e40796adb475ab8f729b3f29d8f76 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot PE_tb_behav xil_defaultlib.PE_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado2020/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto fc2e40796adb475ab8f729b3f29d8f76 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot PE_tb_behav xil_defaultlib.PE_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PE
+Compiling module xil_defaultlib.PE_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot PE_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "PE_tb_behav -key {Behavioral:sim_1:Functional:PE_tb} -tclbatch {PE_tb.tcl} -view {D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/PE_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+open_wave_config D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/PE_tb_behav.wcfg
+source PE_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 1 us : File "D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sim_1/new/PE_tb.v" Line 70
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'PE_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'PE_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj PE_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sources_1/new/PE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sim_1/new/PE_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PE_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+"xelab -wto fc2e40796adb475ab8f729b3f29d8f76 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot PE_tb_behav xil_defaultlib.PE_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado2020/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto fc2e40796adb475ab8f729b3f29d8f76 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot PE_tb_behav xil_defaultlib.PE_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PE
+Compiling module xil_defaultlib.PE_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot PE_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "PE_tb_behav -key {Behavioral:sim_1:Functional:PE_tb} -tclbatch {PE_tb.tcl} -view {D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/PE_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+open_wave_config D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/PE_tb_behav.wcfg
+source PE_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 1 us : File "D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sim_1/new/PE_tb.v" Line 70
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'PE_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1162.824 ; gain = 2.180
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'PE_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj PE_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+"xelab -wto fc2e40796adb475ab8f729b3f29d8f76 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot PE_tb_behav xil_defaultlib.PE_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado2020/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto fc2e40796adb475ab8f729b3f29d8f76 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot PE_tb_behav xil_defaultlib.PE_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+$finish called at time : 1 us : File "D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sim_1/new/PE_tb.v" Line 70
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1167.770 ; gain = 4.719
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'PE_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj PE_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sources_1/new/PE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sim_1/new/PE_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PE_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+"xelab -wto fc2e40796adb475ab8f729b3f29d8f76 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot PE_tb_behav xil_defaultlib.PE_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado2020/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto fc2e40796adb475ab8f729b3f29d8f76 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot PE_tb_behav xil_defaultlib.PE_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PE
+Compiling module xil_defaultlib.PE_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot PE_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "PE_tb_behav -key {Behavioral:sim_1:Functional:PE_tb} -tclbatch {PE_tb.tcl} -view {D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/PE_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+open_wave_config D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/PE_tb_behav.wcfg
+source PE_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 1 us : File "D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sim_1/new/PE_tb.v" Line 70
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'PE_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'PE_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj PE_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+"xelab -wto fc2e40796adb475ab8f729b3f29d8f76 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot PE_tb_behav xil_defaultlib.PE_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado2020/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto fc2e40796adb475ab8f729b3f29d8f76 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot PE_tb_behav xil_defaultlib.PE_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+$finish called at time : 1 us : File "D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sim_1/new/PE_tb.v" Line 70
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1167.770 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'PE_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj PE_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+"xelab -wto fc2e40796adb475ab8f729b3f29d8f76 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot PE_tb_behav xil_defaultlib.PE_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado2020/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto fc2e40796adb475ab8f729b3f29d8f76 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot PE_tb_behav xil_defaultlib.PE_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+$finish called at time : 1 us : File "D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sim_1/new/PE_tb.v" Line 70
+save_wave_config {D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/PE_tb_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'PE_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj PE_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sources_1/new/PE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sim_1/new/PE_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PE_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+"xelab -wto fc2e40796adb475ab8f729b3f29d8f76 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot PE_tb_behav xil_defaultlib.PE_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado2020/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto fc2e40796adb475ab8f729b3f29d8f76 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot PE_tb_behav xil_defaultlib.PE_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PE
+Compiling module xil_defaultlib.PE_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot PE_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "PE_tb_behav -key {Behavioral:sim_1:Functional:PE_tb} -tclbatch {PE_tb.tcl} -view {D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/PE_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+open_wave_config D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/PE_tb_behav.wcfg
+source PE_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 1 us : File "D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sim_1/new/PE_tb.v" Line 70
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'PE_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1171.867 ; gain = 0.000
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sim_1/new/NTT_8p_radix2.v w ]
+add_files -fileset sim_1 D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sim_1/new/NTT_8p_radix2.v
+update_compile_order -fileset sim_1
+export_ip_user_files -of_objects  [get_files D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sim_1/new/NTT_8p_radix2.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sim_1/new/NTT_8p_radix2.v
+close [ open D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sources_1/new/NTT_8p_radix2.v w ]
+add_files D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sources_1/new/NTT_8p_radix2.v
+update_compile_order -fileset sources_1
+save_wave_config {D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/PE_tb_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sim_1/new/NTT_8p_radix2_tp.v w ]
+add_files -fileset sim_1 D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sim_1/new/NTT_8p_radix2_tp.v
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'PE_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj PE_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sources_1/new/PE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sim_1/new/PE_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PE_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+"xelab -wto fc2e40796adb475ab8f729b3f29d8f76 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot PE_tb_behav xil_defaultlib.PE_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado2020/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto fc2e40796adb475ab8f729b3f29d8f76 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot PE_tb_behav xil_defaultlib.PE_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PE
+Compiling module xil_defaultlib.PE_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot PE_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "PE_tb_behav -key {Behavioral:sim_1:Functional:PE_tb} -tclbatch {PE_tb.tcl} -view {D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/PE_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+open_wave_config D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/PE_tb_behav.wcfg
+source PE_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 1 us : File "D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sim_1/new/PE_tb.v" Line 50
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'PE_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1222.711 ; gain = 0.000
+update_compile_order -fileset sources_1
+remove_forces { {/PE_tb/pe_inst/en_r} {/PE_tb/a} {/PE_tb/b} {/PE_tb/w} {/PE_tb/pe_inst/a_w_expand} {/PE_tb/pe_inst/a_w_expand_lb} {/PE_tb/pe_inst/a_w_expand_hb} {/PE_tb/pe_inst/a_w_mod} {/PE_tb/pe_inst/b_temp2} {/PE_tb/pe_inst/a_w} {/PE_tb/valid} {/PE_tb/pe_inst/A_r} {/PE_tb/A} {/PE_tb/B} }
+save_wave_config {D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/PE_tb_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property top NTT_8p_radix2_tp [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'NTT_8p_radix2_tp' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj NTT_8p_radix2_tp_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sources_1/new/NTT_8p_radix2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NTT_8p_radix2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sim_1/new/NTT_8p_radix2_tp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NTT_8p_radix2_tp
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+"xelab -wto fc2e40796adb475ab8f729b3f29d8f76 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot NTT_8p_radix2_tp_behav xil_defaultlib.NTT_8p_radix2_tp xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado2020/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto fc2e40796adb475ab8f729b3f29d8f76 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot NTT_8p_radix2_tp_behav xil_defaultlib.NTT_8p_radix2_tp xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PE
+Compiling module xil_defaultlib.NTT_8p_radix2
+Compiling module xil_defaultlib.NTT_8p_radix2_tp
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot NTT_8p_radix2_tp_behav
+
+****** Webtalk v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim/xsim.dir/NTT_8p_radix2_tp_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim/xsim.dir/NTT_8p_radix2_tp_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon May  8 22:46:38 2023. For additional details about this file, please refer to the WebTalk help file at E:/Vivado2020/Vivado/2020.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Mon May  8 22:46:38 2023...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1222.711 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "NTT_8p_radix2_tp_behav -key {Behavioral:sim_1:Functional:NTT_8p_radix2_tp} -tclbatch {NTT_8p_radix2_tp.tcl} -view {D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/PE_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+open_wave_config D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/PE_tb_behav.wcfg
+WARNING: Simulation object /PE_tb/clk was not found in the design.
+WARNING: Simulation object /PE_tb/rstn was not found in the design.
+WARNING: Simulation object /PE_tb/en was not found in the design.
+source NTT_8p_radix2_tp.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 1 us : File "D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sim_1/new/NTT_8p_radix2_tp.v" Line 84
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'NTT_8p_radix2_tp_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 1222.711 ; gain = 0.000
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 1222.711 ; gain = 0.000
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'NTT_8p_radix2_tp' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj NTT_8p_radix2_tp_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+"xelab -wto fc2e40796adb475ab8f729b3f29d8f76 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot NTT_8p_radix2_tp_behav xil_defaultlib.NTT_8p_radix2_tp xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado2020/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto fc2e40796adb475ab8f729b3f29d8f76 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot NTT_8p_radix2_tp_behav xil_defaultlib.NTT_8p_radix2_tp xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+$finish called at time : 1 us : File "D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sim_1/new/NTT_8p_radix2_tp.v" Line 84
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 1222.711 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'NTT_8p_radix2_tp' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj NTT_8p_radix2_tp_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+"xelab -wto fc2e40796adb475ab8f729b3f29d8f76 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot NTT_8p_radix2_tp_behav xil_defaultlib.NTT_8p_radix2_tp xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado2020/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto fc2e40796adb475ab8f729b3f29d8f76 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot NTT_8p_radix2_tp_behav xil_defaultlib.NTT_8p_radix2_tp xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+$finish called at time : 1 us : File "D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sim_1/new/NTT_8p_radix2_tp.v" Line 84
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1297.156 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'NTT_8p_radix2_tp' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj NTT_8p_radix2_tp_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+"xelab -wto fc2e40796adb475ab8f729b3f29d8f76 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot NTT_8p_radix2_tp_behav xil_defaultlib.NTT_8p_radix2_tp xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado2020/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto fc2e40796adb475ab8f729b3f29d8f76 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot NTT_8p_radix2_tp_behav xil_defaultlib.NTT_8p_radix2_tp xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+$finish called at time : 1 us : File "D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sim_1/new/NTT_8p_radix2_tp.v" Line 84
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1297.309 ; gain = 0.000
+save_wave_config {D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/PE_tb_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'NTT_8p_radix2_tp' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj NTT_8p_radix2_tp_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sources_1/new/NTT_8p_radix2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NTT_8p_radix2
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'out0' is not permitted [D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sources_1/new/NTT_8p_radix2.v:190]
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'out0' is not permitted [D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sources_1/new/NTT_8p_radix2.v:191]
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'out0' is not permitted [D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sources_1/new/NTT_8p_radix2.v:192]
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'out0' is not permitted [D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sources_1/new/NTT_8p_radix2.v:193]
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'out0' is not permitted [D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sources_1/new/NTT_8p_radix2.v:194]
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'out0' is not permitted [D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sources_1/new/NTT_8p_radix2.v:195]
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'out0' is not permitted [D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sources_1/new/NTT_8p_radix2.v:196]
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'out0' is not permitted [D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sources_1/new/NTT_8p_radix2.v:197]
+ERROR: [VRFC 10-2865] module 'NTT_8p_radix2' ignored due to previous errors [D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sources_1/new/NTT_8p_radix2.v:3]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'NTT_8p_radix2_tp' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj NTT_8p_radix2_tp_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sources_1/new/NTT_8p_radix2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NTT_8p_radix2
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'out0' is not permitted [D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sources_1/new/NTT_8p_radix2.v:190]
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'out0' is not permitted [D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sources_1/new/NTT_8p_radix2.v:191]
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'out0' is not permitted [D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sources_1/new/NTT_8p_radix2.v:192]
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'out0' is not permitted [D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sources_1/new/NTT_8p_radix2.v:193]
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'out0' is not permitted [D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sources_1/new/NTT_8p_radix2.v:194]
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'out0' is not permitted [D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sources_1/new/NTT_8p_radix2.v:195]
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'out0' is not permitted [D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sources_1/new/NTT_8p_radix2.v:196]
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'out0' is not permitted [D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sources_1/new/NTT_8p_radix2.v:197]
+ERROR: [VRFC 10-2865] module 'NTT_8p_radix2' ignored due to previous errors [D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sources_1/new/NTT_8p_radix2.v:3]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'NTT_8p_radix2_tp' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj NTT_8p_radix2_tp_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sources_1/new/NTT_8p_radix2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NTT_8p_radix2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sources_1/new/PE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sim_1/new/NTT_8p_radix2_tp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NTT_8p_radix2_tp
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+"xelab -wto fc2e40796adb475ab8f729b3f29d8f76 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot NTT_8p_radix2_tp_behav xil_defaultlib.NTT_8p_radix2_tp xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado2020/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto fc2e40796adb475ab8f729b3f29d8f76 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot NTT_8p_radix2_tp_behav xil_defaultlib.NTT_8p_radix2_tp xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PE
+Compiling module xil_defaultlib.NTT_8p_radix2
+Compiling module xil_defaultlib.NTT_8p_radix2_tp
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot NTT_8p_radix2_tp_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "NTT_8p_radix2_tp_behav -key {Behavioral:sim_1:Functional:NTT_8p_radix2_tp} -tclbatch {NTT_8p_radix2_tp.tcl} -view {D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/PE_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+open_wave_config D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/PE_tb_behav.wcfg
+source NTT_8p_radix2_tp.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 1 us : File "D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sim_1/new/NTT_8p_radix2_tp.v" Line 84
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'NTT_8p_radix2_tp_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1300.277 ; gain = 0.527
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'NTT_8p_radix2_tp' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj NTT_8p_radix2_tp_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sources_1/new/NTT_8p_radix2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NTT_8p_radix2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sources_1/new/PE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sim_1/new/NTT_8p_radix2_tp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NTT_8p_radix2_tp
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+"xelab -wto fc2e40796adb475ab8f729b3f29d8f76 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot NTT_8p_radix2_tp_behav xil_defaultlib.NTT_8p_radix2_tp xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado2020/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto fc2e40796adb475ab8f729b3f29d8f76 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot NTT_8p_radix2_tp_behav xil_defaultlib.NTT_8p_radix2_tp xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PE
+Compiling module xil_defaultlib.NTT_8p_radix2
+Compiling module xil_defaultlib.NTT_8p_radix2_tp
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot NTT_8p_radix2_tp_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "NTT_8p_radix2_tp_behav -key {Behavioral:sim_1:Functional:NTT_8p_radix2_tp} -tclbatch {NTT_8p_radix2_tp.tcl} -view {D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/PE_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+open_wave_config D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/PE_tb_behav.wcfg
+source NTT_8p_radix2_tp.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 1 us : File "D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sim_1/new/NTT_8p_radix2_tp.v" Line 84
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'NTT_8p_radix2_tp_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.runs/synth_1
+
+launch_runs synth_1 -jobs 20
+[Mon May  8 23:37:23 2023] Launched synth_1...
+Run output will be captured here: D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7vx485tffg1157-1
+INFO: [Device 21-403] Loading part xc7vx485tffg1157-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1725.605 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 108 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1822.164 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 2016.078 ; gain = 715.801
+launch_runs impl_1 -jobs 20
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+[Mon May  8 23:41:52 2023] Launched impl_1...
+Run output will be captured here: D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.runs/impl_1/runme.log
+close_design
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2572.707 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 108 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.108 . Memory (MB): peak = 2572.707 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.108 . Memory (MB): peak = 2572.707 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2572.707 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+report_utilization -name utilization_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+save_wave_config {D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/PE_tb_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'NTT_8p_radix2_tp' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj NTT_8p_radix2_tp_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+"xelab -wto fc2e40796adb475ab8f729b3f29d8f76 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot NTT_8p_radix2_tp_behav xil_defaultlib.NTT_8p_radix2_tp xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado2020/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto fc2e40796adb475ab8f729b3f29d8f76 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot NTT_8p_radix2_tp_behav xil_defaultlib.NTT_8p_radix2_tp xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "NTT_8p_radix2_tp_behav -key {Behavioral:sim_1:Functional:NTT_8p_radix2_tp} -tclbatch {NTT_8p_radix2_tp.tcl} -view {D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/PE_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+open_wave_config D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/PE_tb_behav.wcfg
+source NTT_8p_radix2_tp.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 1 us : File "D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sim_1/new/NTT_8p_radix2_tp.v" Line 84
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'NTT_8p_radix2_tp_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 3372.930 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'NTT_8p_radix2_tp' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj NTT_8p_radix2_tp_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sources_1/new/NTT_8p_radix2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NTT_8p_radix2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sources_1/new/PE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sim_1/new/NTT_8p_radix2_tp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NTT_8p_radix2_tp
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+"xelab -wto fc2e40796adb475ab8f729b3f29d8f76 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot NTT_8p_radix2_tp_behav xil_defaultlib.NTT_8p_radix2_tp xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado2020/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto fc2e40796adb475ab8f729b3f29d8f76 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot NTT_8p_radix2_tp_behav xil_defaultlib.NTT_8p_radix2_tp xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PE
+Compiling module xil_defaultlib.NTT_8p_radix2
+Compiling module xil_defaultlib.NTT_8p_radix2_tp
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot NTT_8p_radix2_tp_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "NTT_8p_radix2_tp_behav -key {Behavioral:sim_1:Functional:NTT_8p_radix2_tp} -tclbatch {NTT_8p_radix2_tp.tcl} -view {D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/PE_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+open_wave_config D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/PE_tb_behav.wcfg
+source NTT_8p_radix2_tp.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 1 us : File "D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sim_1/new/NTT_8p_radix2_tp.v" Line 84
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'NTT_8p_radix2_tp_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 3372.930 ; gain = 0.000
