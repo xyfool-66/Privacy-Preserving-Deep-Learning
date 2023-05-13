@@ -84,13 +84,4 @@ module NTT_8p_radix2_tp();
    initial #1000 $finish;
 
 
-
-
-
-
-
-
-
-
-
 endmodule

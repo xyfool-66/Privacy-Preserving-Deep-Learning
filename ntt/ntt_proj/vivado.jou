@@ -100,3 +100,4 @@ close_sim
 launch_simulation
 open_wave_config D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/PE_tb_behav.wcfg
 source NTT_8p_radix2_tp.tcl
+close_sim

@@ -962,3 +962,7 @@ $finish called at time : 1 us : File "D:/Privacy-Preserving-Deep-Learning/ntt/nt
 INFO: [USF-XSim-96] XSim completed. Design snapshot 'NTT_8p_radix2_tp_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
 launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 3372.930 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue May  9 20:31:10 2023...

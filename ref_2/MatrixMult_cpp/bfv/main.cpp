@@ -718,15 +718,31 @@ void test() {
 
 
 }
+void PRINT() {
+	for (int i = 1; i < 5; i++) {
+		for (int j = 1; j < 5; j++) {
+			cout << "A" << i << "1*" << "B1" << j << "+" << "A" << i << "2*" << "B2" << j << "+" << "A" << i << "3*" << "B3" << j << "+" << "A" << i << "4*" << "B4" << j << "  ";
+			if (j == 4) {
+				cout << endl;
+			}
+
+
+		}
+	}
+
+
+
+}
 
 int main(){
 	
 	// bfv_toy_example();
 	// ckks();
 	// multiply_plain_inplace();
-	multiply_cipherVEC_cipherVEC();
+	// multiply_cipherVEC_cipherVEC();
 	// multiply_mat_vec();
 	// multiply_mat_vec_opt();
 	// test();
+	PRINT();
 	return 0;
 }
