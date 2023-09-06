@@ -1,4 +1,6 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sources_1/new/PE.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj_pe_p65537/ntt_proj.srcs/sources_1/new/PE.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module PE
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj/ntt_proj.srcs/sim_1/new/PE_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj_pe_p65537/ntt_proj.srcs/sim_1/new/PE_tb.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module PE_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Privacy-Preserving-Deep-Learning/ntt/ntt_proj_pe_p65537/ntt_proj.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
